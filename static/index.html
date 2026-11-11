@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PayPilot AI · chat to shop, chat to pay</title>
+  <meta name="description" content="An AI shopping assistant that places orders, pays and refunds through the PayPal sandbox.">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">P</span>
+      <div>
+        <h1>PayPilot</h1>
+        <p>chat to shop · chat to pay</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span class="chip sandbox">PayPal sandbox · no real money</span>
+      <button id="vaultBtn" class="btn ghost" type="button" title="Link a PayPal sandbox account once so the assistant can pay inside the chat. It always asks you to confirm first.">Link PayPal for chat-pay</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="chat" aria-label="Chat with PayPilot">
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <div id="chips" class="chips" aria-label="Quick prompts"></div>
+      <form id="composer" class="composer" autocomplete="off">
+        <input id="input" type="text" placeholder="Try: show me something for music" aria-label="Message" maxlength="400">
+        <button class="btn primary" type="submit" id="sendBtn">Send</button>
+      </form>
+    </section>
+
+    <aside class="side" aria-label="Cart and orders">
+      <div class="panel" id="cartPanel"></div>
+      <div class="panel" id="ordersPanel"></div>
+    </aside>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-x" type="button" data-action="modal-close" aria-label="Close">×</button>
+      <p class="eyebrow">Approve with PayPal</p>
+      <h2 id="modalTitle">Pay <span id="modalTotal"></span></h2>
+      <p id="modalOrders" class="muted"></p>
+      <div id="paypalButtons" class="paypal-box"></div>
+      <p id="modalStatus" class="modal-status"></p>
+    </div>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <script type="module" src="/js/controller.js"></script>
+</body>
+</html>

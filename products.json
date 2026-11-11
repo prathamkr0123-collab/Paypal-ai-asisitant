@@ -1,0 +1,10 @@
+[
+  {"id": "p1", "name": "Aero Wireless Headphones", "price": "49.99", "category": "audio", "emoji": "🎧", "description": "Over-ear Bluetooth headphones, 30-hour battery, deep bass", "tags": ["headphones", "headphone", "bluetooth", "music", "wireless", "audio", "bass"]},
+  {"id": "p2", "name": "Pulse Noise-Cancelling Earbuds", "price": "79.00", "category": "audio", "emoji": "🎵", "description": "True wireless earbuds with active noise cancelling and charging case", "tags": ["earbuds", "earphones", "anc", "music", "wireless", "audio", "noise"]},
+  {"id": "p3", "name": "Boom Waterproof Speaker", "price": "59.99", "category": "audio", "emoji": "🔊", "description": "Portable Bluetooth speaker, 12-hour playtime, splash-proof", "tags": ["speaker", "bluetooth", "music", "waterproof", "party", "outdoor", "audio"]},
+  {"id": "p4", "name": "Click Mechanical Keyboard", "price": "89.50", "category": "workspace", "emoji": "⌨️", "description": "Hot-swappable RGB mechanical keyboard for coding and gaming", "tags": ["keyboard", "typing", "coding", "gaming", "desk", "work", "rgb"]},
+  {"id": "p5", "name": "Glide Ergonomic Mouse", "price": "34.99", "category": "workspace", "emoji": "🖱️", "description": "Wireless vertical mouse that reduces wrist strain", "tags": ["mouse", "wireless", "ergonomic", "desk", "work", "office"]},
+  {"id": "p6", "name": "Lift Aluminium Laptop Stand", "price": "24.99", "category": "workspace", "emoji": "💻", "description": "Foldable adjustable stand for laptops up to 17 inches", "tags": ["laptop", "stand", "desk", "work", "ergonomic", "office"]},
+  {"id": "p7", "name": "Volt 20000mAh Power Bank", "price": "39.99", "category": "mobile", "emoji": "🔋", "description": "Fast-charging power bank with two USB ports for travel", "tags": ["powerbank", "power", "battery", "charger", "phone", "travel", "charging"]},
+  {"id": "p8", "name": "Fit Smart Band", "price": "44.95", "category": "wearable", "emoji": "⌚", "description": "Heart-rate, sleep and step tracking with 14-day battery", "tags": ["watch", "band", "fitness", "tracker", "health", "sleep", "wearable"]}
+]
